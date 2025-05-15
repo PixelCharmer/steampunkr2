@@ -1,0 +1,38 @@
+.room2intro {
+    background-size: cover;
+    background-position: center;
+    font-family: "Macondo", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.3vw;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .intro-content {
+        background-color: rgba(0, 0, 0, 0.75);
+        color: white;
+        padding: 2rem;
+        border-radius: 1rem;
+        max-width: 700px;
+        text-align: center;
+
+        p {
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            line-height: 1.4;
+        }
+
+        button {
+            margin-top: 1rem;
+            padding: 0.75rem 1.5rem;
+            font-size: 1rem;
+            background-color: #d9a441;
+            border: none;
+            border-radius: 0.5rem;
+            cursor: pointer;
+        }
+    }
+}

@@ -1,0 +1,101 @@
+.room2-assemble {
+    width: 100vw;
+    height: 100vh;
+    background-color: #1e1e1e;
+    color: white;
+    overflow: auto;
+    padding: 1rem;
+    position: relative;
+    user-select: none;
+
+    h2 {
+        text-align: center;
+        margin-bottom: 1rem;
+        font-family: "Macondo", cursive;
+    }
+
+    h4 {
+        text-align: center;
+        margin-bottom: 1rem;
+        font-family: "Cinzel", serif;
+        line-height: .7;
+    }
+
+    .drag-area {
+        position: relative;
+        width: 100%;
+        height: 80vh;
+        border: 2px dashed #444;
+        background-color: #2a2a2a;
+        overflow: hidden;
+        margin: 0 auto;
+    }
+
+    .code-entry {
+        margin-top: 2rem;
+        text-align: center;
+
+        h3 {
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+
+        .dropdowns {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+
+            select {
+                padding: 0.5rem 1rem;
+                font-size: 1rem;
+                border-radius: 8px;
+                background-color: #f0f0f0;
+                color: #000;
+                border: none;
+                outline: none;
+            }
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+
+            button {
+                padding: 0.6rem 1.5rem;
+                font-size: 1rem;
+                border-radius: 10px;
+                border: none;
+                cursor: pointer;
+                background-color: #a441d9;
+                color: white;
+                transition: background-color 0.2s ease;
+
+                &:hover {
+                    background-color: #c4932f;
+                }
+            }
+        }
+
+        .error {
+            color: #ff5555;
+            margin-top: 1rem;
+            font-weight: bold;
+        }
+    }
+}
+
+@keyframes glowDrop {
+    0% {
+        filter: drop-shadow(0 0 6px #ffe580);
+    }
+
+    100% {
+        filter: none;
+    }
+}
+
+.glow {
+    animation: glowDrop 0.3s ease-in-out;
+}
