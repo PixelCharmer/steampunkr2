@@ -31,6 +31,7 @@ export default function Room2() {
 
     return (
         <div className="room2" style={{ backgroundImage: `url(${background})` }}>
+            <h2 className="objective">Find all 6 hidden blueprint parts</h2>
             {/* Hidden fragment click zones */}
             {imageFragments.map((frag) =>
                 !found.includes(frag.id) ? (

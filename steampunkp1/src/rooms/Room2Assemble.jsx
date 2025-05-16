@@ -146,7 +146,7 @@ export default function Room2Assemble() {
 
             <div className="code-entry">
                 <h3>Enter the 3 hidden words</h3>
-                <p> Placed in order from higest to lowest</p>
+                <p> Placed in order from highest to lowest</p>
                 <div className="dropdowns">
                     {selections.map((val, idx) => (
                         <select key={idx} value={val} onChange={(e) => handleChange(idx, e.target.value)}>
